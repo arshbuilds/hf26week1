@@ -1,0 +1,151 @@
+import { Mission } from '../../domain/mission.types';
+
+export const EXPLORER_MISSIONS: Mission[] = [
+  {
+    id: 'explorer_warmup_analog_compass',
+    title: 'The Solar Compass Rally',
+    brief: 'Determine true North using only tree moss, sun shadows, or wind direction.',
+    instructions: [
+      'Turn off all digital navigation tools and put phones away.',
+      'Study natural markers: direction of sun shadows, moss growth on trees, or wind currents.',
+      'Agree on the orientation and march exactly 100 paces in the chosen cardinal direction.',
+    ],
+    cooperativeHook:
+      'Each player must independently pick a heading based on a distinct natural sign before group debate.',
+    vibes: ['explorer'],
+    arcPhase: 'warmup',
+    intensity: 'standard',
+    environments: ['outdoor', 'park'],
+    minParticipants: 2,
+    maxParticipants: 10,
+    durationBounds: {
+      minMinutes: 5,
+      defaultMinutes: 7,
+      maxMinutes: 10,
+    },
+    suggestedRoles: [
+      { id: 'navigator', title: 'Solar Navigator', duty: 'Calculates heading from ground shadows.' },
+      { id: 'pacer', title: 'Pacer', duty: 'Counts exact synchronized footsteps.' },
+    ],
+    verificationType: 'action',
+    tags: ['orienteering', 'nature', 'analog'],
+  },
+  {
+    id: 'explorer_explore_micro_biome',
+    title: 'The Square-Foot Expedition',
+    brief: 'Establish and document an alien micro-biome in exactly one square foot of forest or park floor.',
+    instructions: [
+      'Use 4 twigs to demarcate an exact 12-inch by 12-inch survey square.',
+      'Examine the square at eye-level on your hands and knees.',
+      'Catalogue at least 5 different plant species, insect trails, or mineral types.',
+    ],
+    cooperativeHook:
+      'Players take turns serving as Microscope (eyes 2 inches away) and Field Scribe (recording findings).',
+    vibes: ['explorer', 'detective'],
+    arcPhase: 'exploration',
+    intensity: 'chill',
+    environments: ['outdoor', 'park'],
+    minParticipants: 2,
+    maxParticipants: 6,
+    durationBounds: {
+      minMinutes: 8,
+      defaultMinutes: 12,
+      maxMinutes: 15,
+    },
+    suggestedRoles: [
+      { id: 'micro_scout', title: 'Field Observer', duty: 'Spots tiny lifeforms and spore patterns.' },
+      { id: 'scribe', title: 'Cartographer', duty: 'Draws a miniature map of the square foot territory.' },
+    ],
+    verificationType: 'photo',
+    tags: ['ecology', 'macro', 'observation'],
+  },
+  {
+    id: 'explorer_explore_elevation_summit',
+    title: 'High Ground Rendezvous',
+    brief: 'Navigate to the highest elevation within sight without retracing any path.',
+    instructions: [
+      'Look around to identify the most prominent knoll, hill crest, or viewing perch.',
+      'Plot a continuous climbing route where the team never steps downhill.',
+      'Reach the summit and sound a brief triumphal bird call together.',
+    ],
+    cooperativeHook:
+      'The designated scout in front is blindfolded and guided solely by vocal directions from the team behind them.',
+    vibes: ['explorer', 'active'],
+    arcPhase: 'exploration',
+    intensity: 'high_energy',
+    environments: ['outdoor', 'park', 'urban'],
+    minParticipants: 2,
+    maxParticipants: 8,
+    durationBounds: {
+      minMinutes: 10,
+      defaultMinutes: 14,
+      maxMinutes: 18,
+    },
+    suggestedRoles: [
+      { id: 'vanguard', title: 'Vanguard', duty: 'Leads the physical ascent.' },
+      { id: 'spotter', title: 'Path Spotter', duty: 'Ensures the path never slopes downward.' },
+    ],
+    verificationType: 'action',
+    tags: ['climbing', 'summit', 'elevation'],
+  },
+  {
+    id: 'explorer_climax_soundscape_cartography',
+    title: 'Acoustic Archipelago',
+    brief: 'Map 5 distant hidden sound sources with closed eyes from a central crossroad.',
+    instructions: [
+      'Stand back-to-back in an outward circle at a trail junction or park plaza.',
+      'Close eyes for 2 full minutes and listen intently to the acoustic horizon.',
+      'Point toward distinctive sounds (running water, wind in leaves, distant bells, bird calls).',
+      'Draw an acoustic territory map on the ground using a dry twig.',
+    ],
+    cooperativeHook:
+      'Every player faces a unique quadrant (North, East, South, West) and reports only sounds from their sector.',
+    vibes: ['explorer', 'creative'],
+    arcPhase: 'climax',
+    intensity: 'chill',
+    environments: ['outdoor', 'park', 'urban'],
+    minParticipants: 3,
+    maxParticipants: 8,
+    durationBounds: {
+      minMinutes: 10,
+      defaultMinutes: 15,
+      maxMinutes: 20,
+    },
+    suggestedRoles: [
+      { id: 'listener_n', title: 'North Ear', duty: 'Surveys northern acoustics.' },
+      { id: 'listener_s', title: 'South Ear', duty: 'Surveys southern acoustics.' },
+      { id: 'cartographer', title: 'Sound Mapper', duty: 'Synthesizes quadrant reports into a mud/chalk map.' },
+    ],
+    verificationType: 'photo',
+    tags: ['audio', 'sensory', 'mapping'],
+  },
+  {
+    id: 'explorer_epilogue_trail_marker',
+    title: 'The Secret Cairns of Gratitude',
+    brief: 'Leave a discrete natural waymarker for future travelers and sign your team expedition code.',
+    instructions: [
+      'Stack exactly 3 balanced river pebbles or pine cones at a trail fork.',
+      'Leave no trash, no marks on living bark, and leave the location cleaner than you found it.',
+      'Take a 30-second silent gratitude pause honoring the trail.',
+    ],
+    cooperativeHook:
+      'Each player must contribute exactly one stone or pine cone, requiring delicate balance without toppling.',
+    vibes: ['explorer'],
+    arcPhase: 'epilogue',
+    intensity: 'chill',
+    environments: ['outdoor', 'park'],
+    minParticipants: 2,
+    maxParticipants: 10,
+    durationBounds: {
+      minMinutes: 4,
+      defaultMinutes: 6,
+      maxMinutes: 8,
+    },
+    suggestedRoles: [
+      { id: 'foundation', title: 'Base Placer', duty: 'Chooses the stable anchor stone.' },
+      { id: 'keystone', title: 'Keystone Balancer', duty: 'Carefully balances the pinnacle stone.' },
+    ],
+    verificationType: 'honor',
+    tags: ['leave_no_trace', 'cairn', 'gratitude'],
+  },
+];
