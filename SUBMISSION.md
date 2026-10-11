@@ -46,7 +46,7 @@ The screen is the **shortest** part of the experience:
 
 ## Code
 
-- **GitHub Repository**: [https://github.com/your-username/adventure-generator](https://github.com/your-username/adventure-generator)
+- **GitHub Repository**: [https://github.com/arshbuilds/adventure-generator](https://github.com/arshbuilds/adventure-generator)
 - Built with **TypeScript**, **React 18**, **Tailwind CSS**, and **Vitest**.
 - Clean Architecture separating pure domain logic and algorithmic solvers from UI components.
 
