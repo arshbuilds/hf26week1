@@ -19,8 +19,8 @@ Our mission is simple: **get groups of friends off their phones and doing creati
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/adventure-generator.git
-cd adventure-generator
+git clone https://github.com/arshbuilds/hf26week1.git
+cd hf26week1
 
 # Install dependencies
 npm install

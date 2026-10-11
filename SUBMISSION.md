@@ -39,14 +39,15 @@ The screen is the **shortest** part of the experience:
 
 ## Demo
 
-- **Local / Deployed Preview**: Run locally with `npm run dev` at `http://localhost:5173`.
+- **Live Web App (Vercel)**: [https://hf26week1.vercel.app](https://hf26week1.vercel.app)
+- **Local Preview**: Run locally with `npm run dev` at `http://localhost:5173`.
 - **Zero-Install Offline Capability**: Runs in modern mobile browsers with full offline session preservation via `localStorage`.
 
 ---
 
 ## Code
 
-- **GitHub Repository**: [https://github.com/arshbuilds/adventure-generator](https://github.com/arshbuilds/adventure-generator)
+- **GitHub Repository**: [https://github.com/arshbuilds/hf26week1](https://github.com/arshbuilds/hf26week1)
 - Built with **TypeScript**, **React 18**, **Tailwind CSS**, and **Vitest**.
 - Clean Architecture separating pure domain logic and algorithmic solvers from UI components.
 
